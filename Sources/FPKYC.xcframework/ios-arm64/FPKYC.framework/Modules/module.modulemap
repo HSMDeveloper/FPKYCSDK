@@ -1,0 +1,6 @@
+framework module FPKYC {
+  umbrella header "FPKYC.h"
+  export *
+
+  module * { export * }
+}

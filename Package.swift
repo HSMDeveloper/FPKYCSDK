@@ -5,20 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "FPKYCSDK",
+    platforms: [
+        .iOS(.v13) // iOS version target
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "FPKYCSDK",
-            targets: ["FPKYCSDK"]),
+            targets: ["FPKYC"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "FPKYCSDK"),
-        .testTarget(
-            name: "FPKYCSDKTests",
-            dependencies: ["FPKYCSDK"]
-        ),
+        // The destination of the framework you will obfuscate the code
+        .binaryTarget(name: "FPKYC", path: "./Sources/FPKYC.xcframework")
     ]
 )
