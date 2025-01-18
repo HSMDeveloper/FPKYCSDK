@@ -2893,6 +2893,104 @@
         "kind": "TypeDecl",
         "name": "KYCStartResponseViewModel",
         "printedName": "KYCStartResponseViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "clientId",
+            "printedName": "clientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FPKYC25KYCStartResponseViewModelC8clientIdSSvp",
+            "mangledName": "$s5FPKYC25KYCStartResponseViewModelC8clientIdSSvp",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FPKYC25KYCStartResponseViewModelC8clientIdSSvg",
+                "mangledName": "$s5FPKYC25KYCStartResponseViewModelC8clientIdSSvg",
+                "moduleName": "FPKYC",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nextSteps",
+            "printedName": "nextSteps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FPKYC25KYCStartResponseViewModelC9nextStepsSaySSGvp",
+            "mangledName": "$s5FPKYC25KYCStartResponseViewModelC9nextStepsSaySSGvp",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FPKYC25KYCStartResponseViewModelC9nextStepsSaySSGvg",
+                "mangledName": "$s5FPKYC25KYCStartResponseViewModelC9nextStepsSaySSGvg",
+                "moduleName": "FPKYC",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
         "declKind": "Class",
         "usr": "s:5FPKYC25KYCStartResponseViewModelC",
         "mangledName": "$s5FPKYC25KYCStartResponseViewModelC",
@@ -4632,21 +4730,21 @@
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/Network\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 5154,
+      "offset": 5171,
       "length": 26,
       "value": "\"application\/octet-stream\""
     },
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/Network\/APIManager.swift",
       "kind": "FloatLiteral",
-      "offset": 7325,
+      "offset": 7342,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/Network\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7368,
+      "offset": 7385,
       "length": 5,
       "value": "false"
     },

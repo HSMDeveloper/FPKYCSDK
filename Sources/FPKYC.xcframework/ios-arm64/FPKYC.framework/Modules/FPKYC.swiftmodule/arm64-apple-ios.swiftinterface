@@ -119,6 +119,12 @@ public enum SecurityError : Swift.Error {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KYCStartResponseViewModel {
+  public var clientId: Swift.String {
+    get
+  }
+  public var nextSteps: [Swift.String] {
+    get
+  }
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KYCUserInfoViewModel : Foundation.ObservableObject {
