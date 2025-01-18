@@ -1970,6 +1970,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NetworkError",
         "printedName": "NetworkError",
@@ -2750,6 +2770,156 @@
         "moduleName": "FPKYC"
       },
       {
+        "kind": "TypeDecl",
+        "name": "CityViewModel",
+        "printedName": "CityViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC13CityViewModelC",
+        "mangledName": "$s5FPKYC13CityViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KYCAdditionalUserInfoResponseViewModel",
+        "printedName": "KYCAdditionalUserInfoResponseViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC38KYCAdditionalUserInfoResponseViewModelC",
+        "mangledName": "$s5FPKYC38KYCAdditionalUserInfoResponseViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KYCGeneralSubmitResponseViewModel",
+        "printedName": "KYCGeneralSubmitResponseViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC33KYCGeneralSubmitResponseViewModelC",
+        "mangledName": "$s5FPKYC33KYCGeneralSubmitResponseViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KYCOTPVerifyResponseViewModel",
+        "printedName": "KYCOTPVerifyResponseViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC29KYCOTPVerifyResponseViewModelC",
+        "mangledName": "$s5FPKYC29KYCOTPVerifyResponseViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KYCStartResponseViewModel",
+        "printedName": "KYCStartResponseViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC25KYCStartResponseViewModelC",
+        "mangledName": "$s5FPKYC25KYCStartResponseViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2765,6 +2935,166 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "FPKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FPKYC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KYCUserInfoViewModel",
+        "printedName": "KYCUserInfoViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC20KYCUserInfoViewModelC",
+        "mangledName": "$s5FPKYC20KYCUserInfoViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DocumentViewModel",
+        "printedName": "DocumentViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC17DocumentViewModelC",
+        "mangledName": "$s5FPKYC17DocumentViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhoneViewModel",
+        "printedName": "PhoneViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC14PhoneViewModelC",
+        "mangledName": "$s5FPKYC14PhoneViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2794,6 +3124,1031 @@
         "kind": "TypeDecl",
         "name": "KYCViewModel",
         "printedName": "KYCViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KYCViewModel",
+                "printedName": "FPKYC.KYCViewModel",
+                "usr": "s:5FPKYC12KYCViewModelC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FPKYC12KYCViewModelC6sharedACvpZ",
+            "mangledName": "$s5FPKYC12KYCViewModelC6sharedACvpZ",
+            "moduleName": "FPKYC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KYCViewModel",
+                    "printedName": "FPKYC.KYCViewModel",
+                    "usr": "s:5FPKYC12KYCViewModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FPKYC12KYCViewModelC6sharedACvgZ",
+                "mangledName": "$s5FPKYC12KYCViewModelC6sharedACvgZ",
+                "moduleName": "FPKYC",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KYCViewModel",
+                    "printedName": "FPKYC.KYCViewModel",
+                    "usr": "s:5FPKYC12KYCViewModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FPKYC12KYCViewModelC6sharedACvsZ",
+                "mangledName": "$s5FPKYC12KYCViewModelC6sharedACvsZ",
+                "moduleName": "FPKYC",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FPKYC12KYCViewModelC6sharedACvMZ",
+                "mangledName": "$s5FPKYC12KYCViewModelC6sharedACvMZ",
+                "moduleName": "FPKYC",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startKYC",
+            "printedName": "startKYC(birthdate:nationalCode:phoneNumber:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCStartResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCStartResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCStartResponseViewModel",
+                        "printedName": "FPKYC.KYCStartResponseViewModel",
+                        "usr": "s:5FPKYC25KYCStartResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC8startKYC9birthdate12nationalCode11phoneNumber10completionySS_S2Sys6ResultOyAA020KYCStartResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC8startKYC9birthdate12nationalCode11phoneNumber10completionySS_S2Sys6ResultOyAA020KYCStartResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifyOTP",
+            "printedName": "verifyOTP(otp:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCOTPVerifyResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCOTPVerifyResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCOTPVerifyResponseViewModel",
+                        "printedName": "FPKYC.KYCOTPVerifyResponseViewModel",
+                        "usr": "s:5FPKYC29KYCOTPVerifyResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC9verifyOTP3otp10completionySS_ys6ResultOyAA024KYCOTPVerifyResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC9verifyOTP3otp10completionySS_ys6ResultOyAA024KYCOTPVerifyResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTerms",
+            "printedName": "getTerms(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.TermsViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.TermsViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TermsViewModel",
+                        "printedName": "FPKYC.TermsViewModel",
+                        "usr": "s:5FPKYC14TermsViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC8getTerms10completionyys6ResultOyAA0e4ViewC0Cs5Error_pGc_tF",
+            "mangledName": "$s5FPKYC12KYCViewModelC8getTerms10completionyys6ResultOyAA0e4ViewC0Cs5Error_pGc_tF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkTerms",
+            "printedName": "checkTerms(termId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCGeneralSubmitResponseViewModel",
+                        "printedName": "FPKYC.KYCGeneralSubmitResponseViewModel",
+                        "usr": "s:5FPKYC33KYCGeneralSubmitResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC10checkTerms6termId10completionySi_ys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC10checkTerms6termId10completionySi_ys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSteps",
+            "printedName": "getSteps(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[FPKYC.StepViewModel], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[FPKYC.StepViewModel], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[FPKYC.StepViewModel]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StepViewModel",
+                            "printedName": "FPKYC.StepViewModel",
+                            "usr": "s:5FPKYC13StepViewModelC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC8getSteps10completionyys6ResultOySayAA08StepViewC0CGs5Error_pGc_tF",
+            "mangledName": "$s5FPKYC12KYCViewModelC8getSteps10completionyys6ResultOySayAA08StepViewC0CGs5Error_pGc_tF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateNationalCard",
+            "printedName": "validateNationalCard(nationalCardFrontImage:nationalCardRearImage:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.NationalCardInfoViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.NationalCardInfoViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NationalCardInfoViewModel",
+                        "printedName": "FPKYC.NationalCardInfoViewModel",
+                        "usr": "s:5FPKYC25NationalCardInfoViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC20validateNationalCard08nationalF10FrontImage0gf4RearI010completionySS_SSys6ResultOyAA0ef8InfoViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC20validateNationalCard08nationalF10FrontImage0gf4RearI010completionySS_SSys6ResultOyAA0ef8InfoViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recognize",
+            "printedName": "recognize(selfieImage:selfieVideo:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCGeneralSubmitResponseViewModel",
+                        "printedName": "FPKYC.KYCGeneralSubmitResponseViewModel",
+                        "usr": "s:5FPKYC33KYCGeneralSubmitResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC9recognize11selfieImage0E5Video10completionySS_SSys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC9recognize11selfieImage0E5Video10completionySS_SSys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateBirthCertificate",
+            "printedName": "validateBirthCertificate(mainPage:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCGeneralSubmitResponseViewModel",
+                        "printedName": "FPKYC.KYCGeneralSubmitResponseViewModel",
+                        "usr": "s:5FPKYC33KYCGeneralSubmitResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC24validateBirthCertificate8mainPage10completionySS_ys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC24validateBirthCertificate8mainPage10completionySS_ys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "submitAddress",
+            "printedName": "submitAddress(province:city:mainStreet:alley:address:plaque:floor:postalCode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCGeneralSubmitResponseViewModel",
+                        "printedName": "FPKYC.KYCGeneralSubmitResponseViewModel",
+                        "usr": "s:5FPKYC33KYCGeneralSubmitResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC13submitAddress8province4city10mainStreet5alley7address6plaque5floor10postalCode10completionySS_S7Sys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC13submitAddress8province4city10mainStreet5alley7address6plaque5floor10postalCode10completionySS_S7Sys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserInfo",
+            "printedName": "getUserInfo(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCUserInfoViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCUserInfoViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCUserInfoViewModel",
+                        "printedName": "FPKYC.KYCUserInfoViewModel",
+                        "usr": "s:5FPKYC20KYCUserInfoViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC11getUserInfo10completionyys6ResultOyAA07KYCUserf4ViewC0Cs5Error_pGc_tF",
+            "mangledName": "$s5FPKYC12KYCViewModelC11getUserInfo10completionyys6ResultOyAA07KYCUserf4ViewC0Cs5Error_pGc_tF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "submitSignature",
+            "printedName": "submitSignature(signature:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCGeneralSubmitResponseViewModel",
+                        "printedName": "FPKYC.KYCGeneralSubmitResponseViewModel",
+                        "usr": "s:5FPKYC33KYCGeneralSubmitResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC15submitSignature9signature10completionySS_ys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC15submitSignature9signature10completionySS_ys6ResultOyAA028KYCGeneralSubmitResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "submitAdditionalInfo",
+            "printedName": "submitAdditionalInfo(jobType:latinFatherName:latinFirstName:latinLastName:married:religion:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FPKYC.KYCAdditionalUserInfoResponseViewModel, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FPKYC.KYCAdditionalUserInfoResponseViewModel, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KYCAdditionalUserInfoResponseViewModel",
+                        "printedName": "FPKYC.KYCAdditionalUserInfoResponseViewModel",
+                        "usr": "s:5FPKYC38KYCAdditionalUserInfoResponseViewModelC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC20submitAdditionalInfo7jobType15latinFatherName0i5FirstK00i4LastK07married8religion10completionySS_S3SSbSSys6ResultOyAA017KYCAdditionalUserf12ResponseViewC0Cs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC20submitAdditionalInfo7jobType15latinFatherName0i5FirstK00i4LastK07married8religion10completionySS_S3SSbSSys6ResultOyAA017KYCAdditionalUserf12ResponseViewC0Cs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStates",
+            "printedName": "getStates(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[FPKYC.StateViewModel], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[FPKYC.StateViewModel], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[FPKYC.StateViewModel]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StateViewModel",
+                            "printedName": "FPKYC.StateViewModel",
+                            "usr": "s:5FPKYC14StateViewModelC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC9getStates10completionyys6ResultOySayAA09StateViewC0CGs5Error_pGc_tF",
+            "mangledName": "$s5FPKYC12KYCViewModelC9getStates10completionyys6ResultOySayAA09StateViewC0CGs5Error_pGc_tF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCities",
+            "printedName": "getCities(stateId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[FPKYC.CityViewModel], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[FPKYC.CityViewModel], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[FPKYC.CityViewModel]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CityViewModel",
+                            "printedName": "FPKYC.CityViewModel",
+                            "usr": "s:5FPKYC13CityViewModelC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC12KYCViewModelC9getCities7stateId10completionySi_ys6ResultOySayAA08CityViewC0CGs5Error_pGctF",
+            "mangledName": "$s5FPKYC12KYCViewModelC9getCities7stateId10completionySi_ys6ResultOySayAA08CityViewC0CGs5Error_pGctF",
+            "moduleName": "FPKYC",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
         "declKind": "Class",
         "usr": "s:5FPKYC12KYCViewModelC",
         "mangledName": "$s5FPKYC12KYCViewModelC",
@@ -2853,6 +4208,135 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NationalCardInfoViewModel",
+        "printedName": "NationalCardInfoViewModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NationalCardInfoViewModel",
+                "printedName": "FPKYC.NationalCardInfoViewModel",
+                "usr": "s:5FPKYC25NationalCardInfoViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FPKYC25NationalCardInfoViewModelC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FPKYC25NationalCardInfoViewModelC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FPKYC",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FPKYC25NationalCardInfoViewModelC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FPKYC25NationalCardInfoViewModelC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FPKYC",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FPKYC25NationalCardInfoViewModelC",
+        "mangledName": "$s5FPKYC25NationalCardInfoViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StateViewModel",
+        "printedName": "StateViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC14StateViewModelC",
+        "mangledName": "$s5FPKYC14StateViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2870,6 +4354,57 @@
         "moduleName": "FPKYC"
       },
       {
+        "kind": "TypeDecl",
+        "name": "StepViewModel",
+        "printedName": "StepViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC13StepViewModelC",
+        "mangledName": "$s5FPKYC13StepViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2877,6 +4412,35 @@
         "moduleName": "FPKYC",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TermsViewModel",
+        "printedName": "TermsViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC14TermsViewModelC",
+        "mangledName": "$s5FPKYC14TermsViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       }
     ],
@@ -3089,21 +4653,21 @@
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/ViewModels\/KYCViewModel.swift",
       "kind": "Array",
-      "offset": 236,
+      "offset": 239,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/ViewModels\/KYCViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16892,
+      "offset": 14636,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/ViewModels\/StepViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 519,
+      "offset": 520,
       "length": 4,
       "value": "true"
     }
