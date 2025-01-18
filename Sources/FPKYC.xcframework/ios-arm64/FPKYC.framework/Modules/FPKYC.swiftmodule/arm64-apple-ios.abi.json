@@ -2750,367 +2750,6 @@
         "moduleName": "FPKYC"
       },
       {
-        "kind": "TypeDecl",
-        "name": "SecurityManager",
-        "printedName": "SecurityManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SecurityManager",
-                "printedName": "FPKYC.SecurityManager",
-                "usr": "s:5FPKYC15SecurityManagerC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FPKYC15SecurityManagerC6sharedACvpZ",
-            "mangledName": "$s5FPKYC15SecurityManagerC6sharedACvpZ",
-            "moduleName": "FPKYC",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecurityManager",
-                    "printedName": "FPKYC.SecurityManager",
-                    "usr": "s:5FPKYC15SecurityManagerC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FPKYC15SecurityManagerC6sharedACvgZ",
-                "mangledName": "$s5FPKYC15SecurityManagerC6sharedACvgZ",
-                "moduleName": "FPKYC",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "encryptAES",
-            "printedName": "encryptAES(data:key:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SymmetricKey",
-                "printedName": "CryptoKit.SymmetricKey",
-                "usr": "s:9CryptoKit12SymmetricKeyV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC10encryptAES4data3key10Foundation4DataVAI_9CryptoKit12SymmetricKeyVtKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC10encryptAES4data3key10Foundation4DataVAI_9CryptoKit12SymmetricKeyVtKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decryptAES",
-            "printedName": "decryptAES(data:key:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SymmetricKey",
-                "printedName": "CryptoKit.SymmetricKey",
-                "usr": "s:9CryptoKit12SymmetricKeyV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC10decryptAES4data3key10Foundation4DataVAI_9CryptoKit12SymmetricKeyVtKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC10decryptAES4data3key10Foundation4DataVAI_9CryptoKit12SymmetricKeyVtKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "generateRSAKeyPair",
-            "printedName": "generateRSAKeyPair()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(privateKey: Security.SecKey, publicKey: Security.SecKey)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecKey",
-                    "printedName": "Security.SecKey",
-                    "usr": "c:@T@SecKeyRef"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecKey",
-                    "printedName": "Security.SecKey",
-                    "usr": "c:@T@SecKeyRef"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC18generateRSAKeyPairSo9SecKeyRefa07privateH0_AF06publicH0tyKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC18generateRSAKeyPairSo9SecKeyRefa07privateH0_AF06publicH0tyKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encryptRSA",
-            "printedName": "encryptRSA(data:publicKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SecKey",
-                "printedName": "Security.SecKey",
-                "usr": "c:@T@SecKeyRef"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC10encryptRSA4data9publicKey10Foundation4DataVAI_So03SecH3RefatKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC10encryptRSA4data9publicKey10Foundation4DataVAI_So03SecH3RefatKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decryptRSA",
-            "printedName": "decryptRSA(data:privateKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SecKey",
-                "printedName": "Security.SecKey",
-                "usr": "c:@T@SecKeyRef"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC10decryptRSA4data10privateKey10Foundation4DataVAI_So03SecH3RefatKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC10decryptRSA4data10privateKey10Foundation4DataVAI_So03SecH3RefatKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "signData",
-            "printedName": "signData(data:privateKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SecKey",
-                "printedName": "Security.SecKey",
-                "usr": "c:@T@SecKeyRef"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC8signData4data10privateKey10Foundation0E0VAI_So03SecH3RefatKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC8signData4data10privateKey10Foundation0E0VAI_So03SecH3RefatKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "verifySignature",
-            "printedName": "verifySignature(data:signature:publicKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SecKey",
-                "printedName": "Security.SecKey",
-                "usr": "c:@T@SecKeyRef"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC15verifySignature4data9signature9publicKeySb10Foundation4DataV_AJSo03SecI3RefatKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC15verifySignature4data9signature9publicKeySb10Foundation4DataV_AJSo03SecI3RefatKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hashSHA256",
-            "printedName": "hashSHA256(data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FPKYC15SecurityManagerC10hashSHA2564data10Foundation4DataVAH_tKF",
-            "mangledName": "$s5FPKYC15SecurityManagerC10hashSHA2564data10Foundation4DataVAH_tKF",
-            "moduleName": "FPKYC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5FPKYC15SecurityManagerC",
-        "mangledName": "$s5FPKYC15SecurityManagerC",
-        "moduleName": "FPKYC",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3150,6 +2789,58 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "FPKYC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KYCViewModel",
+        "printedName": "KYCViewModel",
+        "declKind": "Class",
+        "usr": "s:5FPKYC12KYCViewModelC",
+        "mangledName": "$s5FPKYC12KYCViewModelC",
+        "moduleName": "FPKYC",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3398,14 +3089,14 @@
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/ViewModels\/KYCViewModel.swift",
       "kind": "Array",
-      "offset": 229,
+      "offset": 236,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hassansadeghmoghaddasi\/Developer\/iOS Project\/FarazPardazan\/FPKYC\/FPKYC\/ViewModels\/KYCViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 17170,
+      "offset": 16892,
       "length": 4,
       "value": "\"en\""
     },

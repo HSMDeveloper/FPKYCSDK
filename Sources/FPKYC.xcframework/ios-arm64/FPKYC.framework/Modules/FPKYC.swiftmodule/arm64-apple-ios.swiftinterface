@@ -106,16 +106,8 @@ public enum SecurityError : Swift.Error {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class SecurityManager {
-  public static let shared: FPKYC.SecurityManager
-  public func encryptAES(data: Foundation.Data, key: CryptoKit.SymmetricKey) throws -> Foundation.Data
-  public func decryptAES(data: Foundation.Data, key: CryptoKit.SymmetricKey) throws -> Foundation.Data
-  public func generateRSAKeyPair() throws -> (privateKey: Security.SecKey, publicKey: Security.SecKey)
-  public func encryptRSA(data: Foundation.Data, publicKey: Security.SecKey) throws -> Foundation.Data
-  public func decryptRSA(data: Foundation.Data, privateKey: Security.SecKey) throws -> Foundation.Data
-  public func signData(data: Foundation.Data, privateKey: Security.SecKey) throws -> Foundation.Data
-  public func verifySignature(data: Foundation.Data, signature: Foundation.Data, publicKey: Security.SecKey) throws -> Swift.Bool
-  public func hashSHA256(data: Foundation.Data) throws -> Foundation.Data
+@_hasMissingDesignatedInitializers final public class KYCViewModel : Foundation.ObservableObject {
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 extension FPKYC.KeychainSwiftAccessOptions : Swift.Equatable {}
