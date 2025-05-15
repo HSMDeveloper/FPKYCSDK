@@ -13,32 +13,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class KYCAdditionalUserInfoResponseViewModel {
-  public var next_steps: [Swift.String] {
-    get
-  }
-  public var customerNumber: Swift.String {
-    get
-  }
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class StepViewModel : Foundation.ObservableObject {
-  public var id: Swift.Int {
-    get
-  }
-  public var step: Swift.String {
-    get
-  }
-  public var subTitle: Swift.String {
-    get
-  }
-  public var title: Swift.String {
-    get
-  }
-  public var hasNext: Swift.Bool
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers final public class KYCViewModel : Foundation.ObservableObject {
   public static var shared: FPKYC.KYCViewModel
   final public func startKYC(birthdate: Swift.String, nationalCode: Swift.String, phoneNumber: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCStartResponseViewModel, any Swift.Error>) -> Swift.Void)
@@ -57,6 +31,41 @@ import _SwiftConcurrencyShims
   final public func getCities(stateId: Swift.Int, completion: @escaping (Swift.Result<[FPKYC.CityViewModel], any Swift.Error>) -> Swift.Void)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
+}
+public struct KeychainSwiftConstants {
+  public static var accessGroup: Swift.String {
+    get
+  }
+  public static var accessible: Swift.String {
+    get
+  }
+  public static var attrAccount: Swift.String {
+    get
+  }
+  public static var attrSynchronizable: Swift.String {
+    get
+  }
+  public static var klass: Swift.String {
+    get
+  }
+  public static var matchLimit: Swift.String {
+    get
+  }
+  public static var returnData: Swift.String {
+    get
+  }
+  public static var valueData: Swift.String {
+    get
+  }
+  public static var returnReference: Swift.String {
+    get
+  }
+  public static var returnAttributes: Swift.String {
+    get
+  }
+  public static var secMatchLimitAll: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class KYCOTPVerifyResponseViewModel {
   public var next_steps: [Swift.String] {
@@ -91,19 +100,14 @@ public enum KeychainSwiftAccessOptions {
   }
   @objc deinit
 }
-public enum SecurityError : Swift.Error {
-  case keyGenerationFailed
-  case encryptionFailed
-  case decryptionFailed
-  case signatureFailed
-  case signatureVerificationFailed
-  case hashingFailed
+public enum NetworkError : Swift.Error {
+  case invalidURL
+  case requestFailed
+  case responseUnsuccessful
+  case dataNotFound
+  case decodingError
+  case serverError(statusCode: Swift.Int)
   case unknownError
-  public static func == (a: FPKYC.SecurityError, b: FPKYC.SecurityError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class StateViewModel {
   public var id: Swift.Int {
@@ -113,15 +117,6 @@ public enum SecurityError : Swift.Error {
     get
   }
   @objc deinit
-}
-public enum NetworkError : Swift.Error {
-  case invalidURL
-  case requestFailed
-  case responseUnsuccessful
-  case dataNotFound
-  case decodingError
-  case serverError(statusCode: Swift.Int)
-  case unknownError
 }
 @_hasMissingDesignatedInitializers public class KYCUserInfoViewModel : Foundation.ObservableObject {
   public var address: Swift.String {
@@ -182,41 +177,6 @@ public enum NetworkError : Swift.Error {
 @_hasMissingDesignatedInitializers public class PhoneViewModel : Foundation.ObservableObject {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
-}
-public struct KeychainSwiftConstants {
-  public static var accessGroup: Swift.String {
-    get
-  }
-  public static var accessible: Swift.String {
-    get
-  }
-  public static var attrAccount: Swift.String {
-    get
-  }
-  public static var attrSynchronizable: Swift.String {
-    get
-  }
-  public static var klass: Swift.String {
-    get
-  }
-  public static var matchLimit: Swift.String {
-    get
-  }
-  public static var returnData: Swift.String {
-    get
-  }
-  public static var valueData: Swift.String {
-    get
-  }
-  public static var returnReference: Swift.String {
-    get
-  }
-  public static var returnAttributes: Swift.String {
-    get
-  }
-  public static var secMatchLimitAll: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class KYCGeneralSubmitResponseViewModel {
   public var next_steps: [Swift.String] {
@@ -296,6 +256,46 @@ open class KeychainSwift {
   public var nextSteps: [Swift.String] {
     get
   }
+  @objc deinit
+}
+public enum SecurityError : Swift.Error {
+  case keyGenerationFailed
+  case encryptionFailed
+  case decryptionFailed
+  case signatureFailed
+  case signatureVerificationFailed
+  case hashingFailed
+  case unknownError
+  public static func == (a: FPKYC.SecurityError, b: FPKYC.SecurityError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class KYCAdditionalUserInfoResponseViewModel {
+  public var next_steps: [Swift.String] {
+    get
+  }
+  public var customerNumber: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StepViewModel : Foundation.ObservableObject {
+  public var id: Swift.Int {
+    get
+  }
+  public var step: Swift.String {
+    get
+  }
+  public var subTitle: Swift.String {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public var hasNext: Swift.Bool
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 extension FPKYC.KeychainSwiftAccessOptions : Swift.Equatable {}
