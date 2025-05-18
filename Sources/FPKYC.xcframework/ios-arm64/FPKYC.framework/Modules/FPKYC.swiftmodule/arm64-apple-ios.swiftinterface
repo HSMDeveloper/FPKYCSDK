@@ -13,24 +13,46 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers final public class KYCViewModel : Foundation.ObservableObject {
-  public static var shared: FPKYC.KYCViewModel
-  final public func startKYC(birthdate: Swift.String, nationalCode: Swift.String, phoneNumber: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCStartResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func verifyOTP(otp: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCOTPVerifyResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func getTerms(completion: @escaping (Swift.Result<FPKYC.TermsViewModel, any Swift.Error>) -> Swift.Void)
-  final public func checkTerms(termId: Swift.Int, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func getSteps(completion: @escaping (Swift.Result<[FPKYC.StepViewModel], any Swift.Error>) -> Swift.Void)
-  final public func validateNationalCard(nationalCardFrontImage: Swift.String, nationalCardRearImage: Swift.String, completion: @escaping (Swift.Result<FPKYC.NationalCardInfoViewModel, any Swift.Error>) -> Swift.Void)
-  final public func recognize(selfieImage: Swift.String, selfieVideo: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func validateBirthCertificate(mainPage: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func submitAddress(province: Swift.String, city: Swift.String, mainStreet: Swift.String, alley: Swift.String, address: Swift.String, plaque: Swift.String, floor: Swift.String, postalCode: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func getUserInfo(completion: @escaping (Swift.Result<FPKYC.KYCUserInfoViewModel, any Swift.Error>) -> Swift.Void)
-  final public func submitSignature(signature: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func submitAdditionalInfo(jobType: Swift.String, latinFatherName: Swift.String, latinFirstName: Swift.String, latinLastName: Swift.String, married: Swift.Bool, religion: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCAdditionalUserInfoResponseViewModel, any Swift.Error>) -> Swift.Void)
-  final public func getStates(completion: @escaping (Swift.Result<[FPKYC.StateViewModel], any Swift.Error>) -> Swift.Void)
-  final public func getCities(stateId: Swift.Int, completion: @escaping (Swift.Result<[FPKYC.CityViewModel], any Swift.Error>) -> Swift.Void)
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+@_hasMissingDesignatedInitializers public class TermsViewModel {
+  public var creationDate: Swift.Int {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public var id: Swift.Int {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
   @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NationalCardInfoViewModel : Swift.Codable {
+  public var birthdate: Swift.String {
+    get
+  }
+  public var fatherName: Swift.String {
+    get
+  }
+  public var firstName: Swift.String {
+    get
+  }
+  public var gender: Swift.String {
+    get
+  }
+  public var isMale: Swift.Bool {
+    get
+  }
+  public var lastName: Swift.String {
+    get
+  }
+  public var nationalCode: Swift.String {
+    get
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct KeychainSwiftConstants {
   public static var accessGroup: Swift.String {
@@ -67,6 +89,69 @@ public struct KeychainSwiftConstants {
     get
   }
 }
+public enum NetworkError : Swift.Error {
+  case invalidURL
+  case requestFailed
+  case responseUnsuccessful
+  case dataNotFound
+  case decodingError
+  case serverError(statusCode: Swift.Int)
+  case unknownError
+}
+@_hasMissingDesignatedInitializers public class KYCStartResponseViewModel {
+  public var clientId: Swift.String {
+    get
+  }
+  public var nextSteps: [Swift.String] {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class KYCAdditionalUserInfoResponseViewModel {
+  public var next_steps: [Swift.String] {
+    get
+  }
+  public var customerNumber: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StepViewModel : Foundation.ObservableObject {
+  public var id: Swift.Int {
+    get
+  }
+  public var step: Swift.String {
+    get
+  }
+  public var subTitle: Swift.String {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public var hasNext: Swift.Bool
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class KYCViewModel : Foundation.ObservableObject {
+  public static var shared: FPKYC.KYCViewModel
+  final public func startKYC(birthdate: Swift.String, nationalCode: Swift.String, phoneNumber: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCStartResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func verifyOTP(otp: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCOTPVerifyResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func getTerms(completion: @escaping (Swift.Result<FPKYC.TermsViewModel, any Swift.Error>) -> Swift.Void)
+  final public func checkTerms(termId: Swift.Int, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func getSteps(completion: @escaping (Swift.Result<[FPKYC.StepViewModel], any Swift.Error>) -> Swift.Void)
+  final public func validateNationalCard(nationalCardFrontImage: Swift.String, nationalCardRearImage: Swift.String, completion: @escaping (Swift.Result<FPKYC.NationalCardInfoViewModel, any Swift.Error>) -> Swift.Void)
+  final public func recognize(selfieImage: Swift.String, selfieVideo: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func validateBirthCertificate(mainPage: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func submitAddress(province: Swift.String, city: Swift.String, mainStreet: Swift.String, alley: Swift.String, address: Swift.String, plaque: Swift.String, floor: Swift.String, postalCode: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func getUserInfo(completion: @escaping (Swift.Result<FPKYC.KYCUserInfoViewModel, any Swift.Error>) -> Swift.Void)
+  final public func submitSignature(signature: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCGeneralSubmitResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func submitAdditionalInfo(jobType: Swift.String, latinFatherName: Swift.String, latinFirstName: Swift.String, latinLastName: Swift.String, married: Swift.Bool, religion: Swift.String, completion: @escaping (Swift.Result<FPKYC.KYCAdditionalUserInfoResponseViewModel, any Swift.Error>) -> Swift.Void)
+  final public func getStates(completion: @escaping (Swift.Result<[FPKYC.StateViewModel], any Swift.Error>) -> Swift.Void)
+  final public func getCities(stateId: Swift.Int, completion: @escaping (Swift.Result<[FPKYC.CityViewModel], any Swift.Error>) -> Swift.Void)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class KYCOTPVerifyResponseViewModel {
   public var next_steps: [Swift.String] {
     get
@@ -75,18 +160,6 @@ public struct KeychainSwiftConstants {
     get
   }
   @objc deinit
-}
-public enum KeychainSwiftAccessOptions {
-  case accessibleWhenUnlocked
-  case accessibleWhenUnlockedThisDeviceOnly
-  case accessibleAfterFirstUnlock
-  case accessibleAfterFirstUnlockThisDeviceOnly
-  case accessibleWhenPasscodeSetThisDeviceOnly
-  public static func == (a: FPKYC.KeychainSwiftAccessOptions, b: FPKYC.KeychainSwiftAccessOptions) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class CityViewModel {
   public var id: Swift.Int {
@@ -100,14 +173,19 @@ public enum KeychainSwiftAccessOptions {
   }
   @objc deinit
 }
-public enum NetworkError : Swift.Error {
-  case invalidURL
-  case requestFailed
-  case responseUnsuccessful
-  case dataNotFound
-  case decodingError
-  case serverError(statusCode: Swift.Int)
+public enum SecurityError : Swift.Error {
+  case keyGenerationFailed
+  case encryptionFailed
+  case decryptionFailed
+  case signatureFailed
+  case signatureVerificationFailed
+  case hashingFailed
   case unknownError
+  public static func == (a: FPKYC.SecurityError, b: FPKYC.SecurityError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class StateViewModel {
   public var id: Swift.Int {
@@ -116,6 +194,30 @@ public enum NetworkError : Swift.Error {
   public var name: Swift.String {
     get
   }
+  @objc deinit
+}
+open class KeychainSwift {
+  open var lastResultCode: Darwin.OSStatus
+  open var accessGroup: Swift.String?
+  open var synchronizable: Swift.Bool
+  public init()
+  public init(keyPrefix: Swift.String)
+  @discardableResult
+  open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: FPKYC.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: FPKYC.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: FPKYC.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  open func get(_ key: Swift.String) -> Swift.String?
+  open func getData(_ key: Swift.String, asReference: Swift.Bool = false) -> Foundation.Data?
+  open func getBool(_ key: Swift.String) -> Swift.Bool?
+  @discardableResult
+  open func delete(_ key: Swift.String) -> Swift.Bool
+  public var allKeys: [Swift.String] {
+    get
+  }
+  @discardableResult
+  open func clear() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KYCUserInfoViewModel : Foundation.ObservableObject {
@@ -184,121 +286,19 @@ public enum NetworkError : Swift.Error {
   }
   @objc deinit
 }
-open class KeychainSwift {
-  open var lastResultCode: Darwin.OSStatus
-  open var accessGroup: Swift.String?
-  open var synchronizable: Swift.Bool
-  public init()
-  public init(keyPrefix: Swift.String)
-  @discardableResult
-  open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: FPKYC.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
-  @discardableResult
-  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: FPKYC.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
-  @discardableResult
-  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: FPKYC.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
-  open func get(_ key: Swift.String) -> Swift.String?
-  open func getData(_ key: Swift.String, asReference: Swift.Bool = false) -> Foundation.Data?
-  open func getBool(_ key: Swift.String) -> Swift.Bool?
-  @discardableResult
-  open func delete(_ key: Swift.String) -> Swift.Bool
-  public var allKeys: [Swift.String] {
-    get
-  }
-  @discardableResult
-  open func clear() -> Swift.Bool
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class TermsViewModel {
-  public var creationDate: Swift.Int {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
-  public var id: Swift.Int {
-    get
-  }
-  public var title: Swift.String {
-    get
-  }
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class NationalCardInfoViewModel : Swift.Codable {
-  public var birthdate: Swift.String {
-    get
-  }
-  public var fatherName: Swift.String {
-    get
-  }
-  public var firstName: Swift.String {
-    get
-  }
-  public var gender: Swift.String {
-    get
-  }
-  public var isMale: Swift.Bool {
-    get
-  }
-  public var lastName: Swift.String {
-    get
-  }
-  public var nationalCode: Swift.String {
-    get
-  }
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers public class KYCStartResponseViewModel {
-  public var clientId: Swift.String {
-    get
-  }
-  public var nextSteps: [Swift.String] {
-    get
-  }
-  @objc deinit
-}
-public enum SecurityError : Swift.Error {
-  case keyGenerationFailed
-  case encryptionFailed
-  case decryptionFailed
-  case signatureFailed
-  case signatureVerificationFailed
-  case hashingFailed
-  case unknownError
-  public static func == (a: FPKYC.SecurityError, b: FPKYC.SecurityError) -> Swift.Bool
+public enum KeychainSwiftAccessOptions {
+  case accessibleWhenUnlocked
+  case accessibleWhenUnlockedThisDeviceOnly
+  case accessibleAfterFirstUnlock
+  case accessibleAfterFirstUnlockThisDeviceOnly
+  case accessibleWhenPasscodeSetThisDeviceOnly
+  public static func == (a: FPKYC.KeychainSwiftAccessOptions, b: FPKYC.KeychainSwiftAccessOptions) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class KYCAdditionalUserInfoResponseViewModel {
-  public var next_steps: [Swift.String] {
-    get
-  }
-  public var customerNumber: Swift.String {
-    get
-  }
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class StepViewModel : Foundation.ObservableObject {
-  public var id: Swift.Int {
-    get
-  }
-  public var step: Swift.String {
-    get
-  }
-  public var subTitle: Swift.String {
-    get
-  }
-  public var title: Swift.String {
-    get
-  }
-  public var hasNext: Swift.Bool
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
-extension FPKYC.KeychainSwiftAccessOptions : Swift.Equatable {}
-extension FPKYC.KeychainSwiftAccessOptions : Swift.Hashable {}
 extension FPKYC.SecurityError : Swift.Equatable {}
 extension FPKYC.SecurityError : Swift.Hashable {}
+extension FPKYC.KeychainSwiftAccessOptions : Swift.Equatable {}
+extension FPKYC.KeychainSwiftAccessOptions : Swift.Hashable {}
